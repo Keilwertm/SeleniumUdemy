@@ -1,9 +1,12 @@
+using System.Diagnostics;
+
 namespace UnitTestProject1;
 
 public class Tests
+
 {
     [SetUp]
-    
+
     public void Setup()
     {
     }
@@ -11,6 +14,7 @@ public class Tests
     [Test]
     public void Test1()
     {
+
         var a = 1;
         var b = 2;
         Assert.AreEqual(3, a + b);
@@ -19,8 +23,7 @@ public class Tests
         Assert.Pass();
         var d = 1;
         Assert.AreNotEqual(1, a);
-        
-       
+
     }
 
     private void Quiz()
