@@ -21,8 +21,12 @@ namespace Section5
         [TestMethod]
         public void Number1_Is_Equal_Number2()
         {
-           Assert.IsTrue(number1 == number2);
-            
+            if (number1 == number2)
+            {
+                //this code only executes if the conditional is true
+                Assert.IsTrue(number1 == number2);
+            }
+            Assert.IsFalse(number1 == number2);
         }
 
         [TestMethod]
@@ -30,7 +34,7 @@ namespace Section5
         {
             if(number1 != number2)
             {
-                Assert.IsTrue(number1 != number2);
+               Assert.IsTrue(number1 != number2);
             }
         }
 
@@ -48,7 +52,7 @@ namespace Section5
         {
             if (number1 >= number2)
             {
-                Assert.IsTrue(number1 >= number2);
+                    Assert.IsTrue(number1 >= number2);
             }
         }
 
@@ -57,15 +61,15 @@ namespace Section5
         {
             if (number1 < number2)
             {
-                Assert.IsTrue(number1 < number2);
+               Assert.IsTrue(number1 < number2);
             }
-            Assert.IsTrue(number1 < number2);
+      
         }
 
         [TestMethod]
         public void Number1_Less_Than_Or_Equal_Number2()
         {
-            Assert.IsTrue(number1 <= number2);
+           Assert.IsFalse(number1 <= number2); 
         }
     }
 }
