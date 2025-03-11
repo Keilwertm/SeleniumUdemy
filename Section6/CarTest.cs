@@ -20,32 +20,17 @@ namespace Section6
         [TestMethod]
         public void Call_Acceleration_Method()
         {
-            //arrange
             Car myCar = new Car("Red", 2, true);
-
-            //act
+            
             myCar.Accelerate();
         }
 
         [TestMethod]
         public void Call_FamilyCar_Method()
         {
-            //arrange
-            Car myCar = new Car("Red", 4, true);
-
-            //act
+            Car myCar = new Car("Red", 2, true);
             bool carType = myCar.FamilyCar();
-
-            //assert
-            if(carType == true)
-            {
-                Assert.IsTrue(carType == true);
-
-            }
-            else
-            {
-                Assert.Fail();
-            }
+            Assert.IsTrue(carType);
         }
     }
 }
