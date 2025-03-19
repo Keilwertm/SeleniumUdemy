@@ -9,7 +9,7 @@ namespace Section6
         [TestMethod]
         public void Test_Employee_ID_Set()
         {
-            Employee employee1 = new Employee(123);
+            Employee employee1 = new Employee(124);
 
             employee1.JobTitle = "Manager";
 
